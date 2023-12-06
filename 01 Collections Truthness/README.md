@@ -18,3 +18,10 @@ if xe:
 if xe[0]:
     res[1] = True
 ```
+
+### Notes
+
+> - Python considers empty lists, tuples, dicts and strings as False values in conditionals
+> - Non-empty collections are considered True
+> - So the outer if evaluates xe as True since it is a non-empty list containing an empty tuple
+> - The inner if tries to evaluate the first element `xe[0]``, but it is an empty tuple which evaluates to False
