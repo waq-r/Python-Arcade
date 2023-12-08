@@ -7,14 +7,20 @@ with open("titles.txt", "r") as f:
     lines = f.read().splitlines()
 
 def create_directory_if_not_exists(number, directory):
-    if not os.path.exists(directory):
-        os.makedirs(number+" "+directory)
+    # create URL safe directory name string
+    directory_name = snake_case(directory)
+    if not os.path.exists(directory_name):
+        os.makedirs(number+"-"+directory_name)
         # create a text file inside new directory
-        with open(os.path.join(number+" "+directory, "README.md"), "w") as f:
-            f.write("> ### Meet Python \n --- \n # " + directory + "\n #### Source: [codesignal.com](https://codesignal.com/) Python Arcade \n --- \n")
+        with open(os.path.join(number+"-"+directory_name, "README.md"), "w") as f:
+            f.write("> ### Slithering in Strings \n --- \n # " + directory + "\n #### Source: [codesignal.com](https://codesignal.com/) Python Arcade \n --- \n")
         # create a python .py extension file inside new directory
-        with open(os.path.join(number+" "+directory, kebab_case(directory)+".py"), "w") as f:
+        with open(os.path.join(number+"-"+directory_name, kebab_case(directory)+".py"), "w") as f:
             f.write("# " + directory + "\n")
+
+# function to create snake case
+def snake_case(name):
+    return name.replace(" ", "_")
 
 #function to create kebab case name from lines
 def kebab_case(name):
