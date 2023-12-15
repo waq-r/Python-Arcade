@@ -1,20 +1,10 @@
-11
-String Definition
-12
-Fix Message
-13
-Cat Walk
-14
-Convert Tabs
-15
-Feedback Review
-16
-Is Word Palindrome
-17
-Permutation Cipher
-18
-Competitive Eating
-19
-New Style Formatting
-20
-Get Commit
+35
+Chess Teams
+36
+Fix Result
+37
+College Courses
+38
+Create Histogram
+39
+Least Common Denominator
