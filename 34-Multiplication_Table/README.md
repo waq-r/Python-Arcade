@@ -12,7 +12,7 @@ Looks like your little brother doesn't want to remember the multiplication table
 
 To begin with, you need to construct a multiplication table. Given an integer n, return the multiplication table of size `n × n`.
 
-Example
+##### Example
 
 For `n = 5`, the output should be
 
