@@ -12,7 +12,7 @@ A grand Team Chess Tournament will be held at your University. Two teams, `smart
 
 Given the names of the players of both `smarties` and `cleveries`, return the games in the order they will be played.
 
-Example
+##### Example
 
 For `smarties = ["Jane", "Bob", "Peter"]` and
 cleveries = `["Oscar", "Lidia", "Ann"]`, the output should be
