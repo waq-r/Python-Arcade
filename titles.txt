@@ -1,10 +1,16 @@
-35
-Chess Teams
-36
-Fix Result
-37
-College Courses
-38
-Create Histogram
-39
-Least Common Denominator
+65
+Calc Bonuses
+66
+Calc Final Score
+67
+Fibonacci Generator
+68
+Calkin Wilf Sequence
+69
+Check Password
+70
+Greetings Generator
+71
+Range Float
+72
+Super Prize

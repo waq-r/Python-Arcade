@@ -13,7 +13,7 @@ def create_directory_if_not_exists(number, directory):
         os.makedirs(number+"-"+directory_name)
         # create a text file inside new directory
         with open(os.path.join(number+"-"+directory_name, "README.md"), "w") as f:
-            f.write("> ### Fumbling in Functional \n --- \n # " + directory + "\n #### Source: [codesignal.com](https://codesignal.com/) Python Arcade \n --- \n")
+            f.write("> ### Yin and Yang of Yields \n --- \n # " + directory + "\n #### Source: [codesignal.com](https://codesignal.com/) Python Arcade \n --- \n")
         # create a python .py extension file inside new directory
         with open(os.path.join(number+"-"+directory_name, kebab_case(directory)+".py"), "w") as f:
             f.write("# " + directory + "\n")
