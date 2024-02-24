@@ -8,14 +8,14 @@
 
 ---
 
-As you may know, the range function in Python allows coders to iterate over elements from `start` to `stop` with the given step. Unfortunately it works only for integer values, and additional libraries should be used if a programmer wants to use float values.
+Not long ago Greg noticed that he started to forget things, and hurried to the doctor. The doc told him that it was perfectly normal for his age, and wrote down a list of `pills` that Greg can take in order to improve his memory. He especially recommended one medicine as the most effective one.
 
-CodeSignal doesn't include third-party libraries, so you have to make do with the standard ones. Given float numbers `start`, `stop` and `step`, your task is to return a list of values from `start` to `stop` (including start and not including `stop`), evenly spaced by the `step`.
+Unfortunately Greg forgot which medicine is the most effective, and he feels like he really needs to take them. Greg recalls that the name of the most effective medicine goes in the list somewhere after the very first name that has an even length. Your task is to help Greg: given the list of the `pills`, return a list of three names that go right after the very first medicine name of the even length.
 
-Values start, stop and step have at most 5 digits after the decimal point each.
+If there are less than three medicines to return, return empty strings instead of them.
 
 ##### Example
 
-For `start = -0.9`, `stop = 0.45`, and `step = 0.2`,
+For `pills = ["Notforgetan", "Antimoron", "Rememberin", "Bestmedicen", "Superpillsus"]`,
 the output should be
-`solution(start, stop, step) = [-0.9, -0.7, -0.5, -0.3, -0.1, 0.1, 0.3]`.
+`solution(pills) = ["Bestmedicen", "Superpillsus", ""]`.

@@ -1,6 +1,6 @@
-# Memory Pills
-from itertools import count, takewhile
+from itertools import dropwhile
 
-def solution(start, stop, step):
-    gen = takewhile(lambda x: x < stop, count(start, step))
-    return list(gen)
+def solution(pills):
+    gen = dropwhile(lambda x: len(x)%2 != 0, pills + ['']*3)
+    next(gen)
+    return [next(gen) for _ in range(3)]
